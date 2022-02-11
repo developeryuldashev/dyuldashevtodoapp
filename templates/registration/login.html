@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<div class="container">
+<h2>Bu yerdan login qilasan</h2>
+<h3>LOG IN o'zbekchada Kirish</h3>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-success">Kirish</button>
+</form>
+</div>
+</body>
+</html>
